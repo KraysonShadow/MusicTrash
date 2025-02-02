@@ -1,0 +1,751 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#"/>
+    <Declaration>
+        <Class IRI="#Духовые"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Жанр"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Инструмент"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Исполнитель"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Клавишные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пользователь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Струнные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ударные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Электронные"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Подходит_инструмент"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Подходит_пользователю"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Предпочитает_жанр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daft_Punk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deadmau5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_Day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kendrick_Lamar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Louis_Armstrong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miles_Davis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nirvana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radiohead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ryuichi_Sakamoto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Beatles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Jazz_Messengers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tupac_Shakur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Альт"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Барабаны"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бас_гитара"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Виолончель"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Джаз"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Джон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Драм-машина"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Иоганн_Себастьян_Бах"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кастаньеты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Клавесин"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кларнет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Классика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Классическая_гитара"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Контрабас"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Людвиг_ван_Бетховен"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Орган"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Саксофон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Скрипка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тромбон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Труба"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Туба"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Фортепиано"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хип-хоп"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электрогитара"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электронное_пианино"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электронные_барабаны"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AC/DC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guns_N&apos;_Roses"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Духовые"/>
+        <Class IRI="#Инструмент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Клавишные"/>
+        <Class IRI="#Инструмент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Струнные"/>
+        <Class IRI="#Инструмент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ударные"/>
+        <Class IRI="#Инструмент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Электронные"/>
+        <Class IRI="#Инструмент"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Daft_Punk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Deadmau5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Green_Day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Kendrick_Lamar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Louis_Armstrong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Miles_Davis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Nirvana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Radiohead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Ryuichi_Sakamoto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#The_Beatles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#The_Jazz_Messengers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Tupac_Shakur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Альт"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ударные"/>
+        <NamedIndividual IRI="#Барабаны"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Бас_гитара"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Виолончель"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жанр"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пользователь"/>
+        <NamedIndividual IRI="#Джон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электронные"/>
+        <NamedIndividual IRI="#Драм-машина"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Иоганн_Себастьян_Бах"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ударные"/>
+        <NamedIndividual IRI="#Кастаньеты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клавишные"/>
+        <NamedIndividual IRI="#Клавесин"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Кларнет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жанр"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Классическая_гитара"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Контрабас"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Людвиг_ван_Бетховен"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Орган"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клавишные"/>
+        <NamedIndividual IRI="#Орган"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жанр"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Саксофон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Скрипка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Тромбон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Труба"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Духовые"/>
+        <NamedIndividual IRI="#Туба"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клавишные"/>
+        <NamedIndividual IRI="#Фортепиано"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жанр"/>
+        <NamedIndividual IRI="#Хип-хоп"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Струнные"/>
+        <NamedIndividual IRI="#Электрогитара"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электронные"/>
+        <NamedIndividual IRI="#Электрогитара"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жанр"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клавишные"/>
+        <NamedIndividual IRI="#Электронное_пианино"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электронные"/>
+        <NamedIndividual IRI="#Электронное_пианино"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ударные"/>
+        <NamedIndividual IRI="#Электронные_барабаны"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электронные"/>
+        <NamedIndividual IRI="#Электронные_барабаны"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#AC/DC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Исполнитель"/>
+        <NamedIndividual IRI="#Guns_N&apos;_Roses"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Daft_Punk"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Deadmau5"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Green_Day"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Kendrick_Lamar"/>
+        <NamedIndividual IRI="#Хип-хоп"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Louis_Armstrong"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Miles_Davis"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Nirvana"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Radiohead"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Ryuichi_Sakamoto"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#The_Beatles"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#The_Jazz_Messengers"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Tupac_Shakur"/>
+        <NamedIndividual IRI="#Хип-хоп"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Альт"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Барабаны"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Барабаны"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Бас_гитара"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Виолончель"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+        <NamedIndividual IRI="#Джон"/>
+        <NamedIndividual IRI="#Daft_Punk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+        <NamedIndividual IRI="#Джон"/>
+        <NamedIndividual IRI="#Deadmau5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Драм-машина"/>
+        <NamedIndividual IRI="#Хип-хоп"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Иоганн_Себастьян_Бах"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Кастаньеты"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Клавесин"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Кларнет"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Классическая_гитара"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Контрабас"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Людвиг_ван_Бетховен"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Орган"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Саксофон"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Скрипка"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Тромбон"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Труба"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Туба"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Фортепиано"/>
+        <NamedIndividual IRI="#Джаз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Фортепиано"/>
+        <NamedIndividual IRI="#Классика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Электрогитара"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Электрогитара"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Электронное_пианино"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <NamedIndividual IRI="#Электронные_барабаны"/>
+        <NamedIndividual IRI="#Электронная_музыка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#AC/DC"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <NamedIndividual IRI="#Guns_N&apos;_Roses"/>
+        <NamedIndividual IRI="#Рок"/>
+    </ObjectPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Подходит_инструмент"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Подходит_пользователю"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Подходит_инструмент"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Подходит_пользователю"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Предпочитает_жанр"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <Class IRI="#Исполнитель"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+        <Class IRI="#Пользователь"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <Class IRI="#Инструмент"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Подходит_инструмент"/>
+        <Class IRI="#Пользователь"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Подходит_пользователю"/>
+        <Class IRI="#Инструмент"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Предпочитает_жанр"/>
+        <Class IRI="#Пользователь"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Играет_в_жанре"/>
+        <Class IRI="#Жанр"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Нравится_исполнитель"/>
+        <Class IRI="#Исполнитель"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Подходит_жанру"/>
+        <Class IRI="#Жанр"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Подходит_инструмент"/>
+        <Class IRI="#Инструмент"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Подходит_пользователю"/>
+        <Class IRI="#Пользователь"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Предпочитает_жанр"/>
+        <Class IRI="#Жанр"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Нравится_исполнитель"/>
+                <Variable IRI="#user"/>
+                <Variable IRI="#performer"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Играет_в_жанре"/>
+                <Variable IRI="#performer"/>
+                <Variable IRI="#genre"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Предпочитает_жанр"/>
+                <Variable IRI="#user"/>
+                <Variable IRI="#genre"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Предпочитает_жанр"/>
+                <Variable IRI="#user"/>
+                <Variable IRI="#genre"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Подходит_жанру"/>
+                <Variable IRI="#instrument"/>
+                <Variable IRI="#genre"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Подходит_пользователю"/>
+                <Variable IRI="#instrument"/>
+                <Variable IRI="#user"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
