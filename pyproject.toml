@@ -1,20 +1,20 @@
-[tool.poetry]
-name = "searchformapi"
+[project]
+name = "musictrash"
 version = "0.1.0"
-description = "Web app for form recognition"
-authors = ["Krayson <sdflake758@gmail.com>"]
+description = ""
+authors = [
+    {name = "Krayson",email = "sdflake758@gmail.com"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-fastapi = "^0.115.6"
-motor = "^3.6.0"
-uvicorn = "^0.32.1"
-pydantic = "^2.10.3"
-owlready2 = "^0.47"
-python-multipart = "^0.0.20"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "owlready2 (>=0.47,<0.48)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "uvicorn (>=0.34.0,<0.35.0)"
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"

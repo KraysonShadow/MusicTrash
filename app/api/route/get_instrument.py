@@ -1,10 +1,9 @@
 from fastapi import Depends, Form
 from app.utils.ontology import get_instruments
-from app.api.schemas.instrument_schemas import InstrumentsResponse, Artist
+from app.api.schemas.instrument_schemas import InstrumentsResponse
 
-def get(artists: str):
+def get(artists: str = None, ):
+    artists = [artist.strip() for artist in artists.split(",")]
     instruments = get_instruments(artists)
-    for instrument in instruments:
-        print(instrument)
-    
+
     return InstrumentsResponse(instruments=instruments)

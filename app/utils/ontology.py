@@ -3,20 +3,22 @@ from owlready2 import get_ontology, sync_reasoner
 # Загружаем онтологию
 ontology = get_ontology("app/utils/music.owl").load()
 
+
+with ontology:
+    sync_reasoner()
+
+
 def get_instruments(artists: list[str]) -> list[str]:
     """
     Получает список музыкальных инструментов по именам исполнителей.
     """
-    with ontology:
-        sync_reasoner()  # Запуск reasoner'а (можно заменить на sync_reasoner_hermit())
+    instruments = set() 
 
-    instruments = set()  # Используем set, чтобы избежать дублирования
+    for artist in ontology.Исполнитель.instances():
+        if artist.name in artists:
+            for genre in artist.Играет_в_жанре:
+                for instrument in ontology.Инструмент.instances():
+                    if genre in instrument.Подходит_жанру:
+                        instruments.add(instrument) 
 
-    for artist in ontology.Исполнитель.instances():  # Получаем всех исполнителей
-        if artist.name in artists:  # Проверяем, есть ли имя в списке
-            for genre in artist.Играет_в_жанре:  # Исправлена опечатка
-                test = genre.Подходит_инструмент
-                for instrument in genre.Подходит_инструмент:
-                    instruments.add(instrument.name)  # Получаем название инструмента
-
-    return list(instruments)  # Преобразуем в список перед возвратом
+    return list(instruments) 

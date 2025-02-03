@@ -7,4 +7,4 @@ app = FastAPI()
 app.include_router(router, prefix="/api")
 
 for cls in ontology.classes():
-    print(cls)
+    print(cls, '->', cls.is_a)
