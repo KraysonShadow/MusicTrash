@@ -4,4 +4,4 @@ from app.api.schemas.instrument_schemas import InstrumentsResponse
 
 router = APIRouter(tags=["instrument"])
 
-router.get("/", status_code=200, response_model=InstrumentsResponse)(get)
+router.patch("/", status_code=200, response_model=InstrumentsResponse)(get)
