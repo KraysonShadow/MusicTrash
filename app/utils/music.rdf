@@ -51,6 +51,31 @@
   <rdfs:range rdf:resource="#Жанр"/>
 </owl:ObjectProperty>
 
+<owl:DatatypeProperty rdf:about="#Вес_жанра_Джаз">
+  <rdfs:domain rdf:resource="#Инструмент"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Вес_жанра_Классика">
+  <rdfs:domain rdf:resource="#Инструмент"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Вес_жанра_Рок">
+  <rdfs:domain rdf:resource="#Инструмент"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Вес_жанра_Хип-хоп">
+  <rdfs:domain rdf:resource="#Инструмент"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Вес_жанра_Электронная_музыка">
+  <rdfs:domain rdf:resource="#Инструмент"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
 <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
 
 <owl:Class rdf:about="#Исполнитель"/>
@@ -164,22 +189,27 @@
 <owl:NamedIndividual rdf:about="#Альт">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Барабаны">
   <rdf:type rdf:resource="#Ударные"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
   <Подходит_жанру rdf:resource="#Рок"/>
+  <Вес_жанра_Рок rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Рок>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Бас_гитара">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Рок"/>
+  <Вес_жанра_Рок rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Рок>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Виолончель">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Джон">
@@ -191,6 +221,7 @@
 <owl:NamedIndividual rdf:about="#Драм-машина">
   <rdf:type rdf:resource="#Электронные"/>
   <Подходит_жанру rdf:resource="#Хип-хоп"/>
+  <Вес_жанра_Хип-хоп rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Хип-хоп>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Иоганн_Себастьян_Бах">
@@ -201,26 +232,31 @@
 <owl:NamedIndividual rdf:about="#Кастаньеты">
   <rdf:type rdf:resource="#Ударные"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Клавесин">
   <rdf:type rdf:resource="#Клавишные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Кларнет">
   <rdf:type rdf:resource="#Духовые"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Классическая_гитара">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Контрабас">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Людвиг_ван_Бетховен">
@@ -232,37 +268,45 @@
   <rdf:type rdf:resource="#Духовые"/>
   <rdf:type rdf:resource="#Клавишные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Саксофон">
   <rdf:type rdf:resource="#Духовые"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Скрипка">
   <rdf:type rdf:resource="#Струнные"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Тромбон">
   <rdf:type rdf:resource="#Духовые"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Труба">
   <rdf:type rdf:resource="#Духовые"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Туба">
   <rdf:type rdf:resource="#Духовые"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Фортепиано">
   <rdf:type rdf:resource="#Клавишные"/>
   <Подходит_жанру rdf:resource="#Джаз"/>
   <Подходит_жанру rdf:resource="#Классика"/>
+  <Вес_жанра_Джаз rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Джаз>
+  <Вес_жанра_Классика rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Классика>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Электрогитара">
@@ -270,18 +314,22 @@
   <rdf:type rdf:resource="#Электронные"/>
   <Подходит_жанру rdf:resource="#Рок"/>
   <Подходит_жанру rdf:resource="#Электронная_музыка"/>
+  <Вес_жанра_Рок rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Рок>
+  <Вес_жанра_Электронная_музыка rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</Вес_жанра_Электронная_музыка>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Электронное_пианино">
   <rdf:type rdf:resource="#Клавишные"/>
   <rdf:type rdf:resource="#Электронные"/>
   <Подходит_жанру rdf:resource="#Электронная_музыка"/>
+  <Вес_жанра_Электронная_музыка rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Электронная_музыка>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Электронные_барабаны">
   <rdf:type rdf:resource="#Ударные"/>
   <rdf:type rdf:resource="#Электронные"/>
   <Подходит_жанру rdf:resource="#Электронная_музыка"/>
+  <Вес_жанра_Электронная_музыка rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Вес_жанра_Электронная_музыка>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#AC/DC">

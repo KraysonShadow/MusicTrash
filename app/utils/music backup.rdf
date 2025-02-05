@@ -1,0 +1,752 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Играет_в_жанре -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Играет_в_жанре">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Нравится_исполнитель -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Нравится_исполнитель">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_жанру -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_жанру">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_инструмент -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_инструмент">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_пользователю"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_пользователю -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_пользователю">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Предпочитает_жанр -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Предпочитает_жанр">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Джаз -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Джаз">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Классика -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Классика">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Рок -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Рок">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Хип-хоп -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Хип-хоп">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Электронная_музыка -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Вес_жанра_Электронная_музыка">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ударные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ударные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Инструмент"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Daft_Punk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Daft_Punk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Deadmau5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Deadmau5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Green_Day -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Green_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Kendrick_Lamar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Kendrick_Lamar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Хип-хоп"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Louis_Armstrong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Louis_Armstrong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Miles_Davis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Miles_Davis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Nirvana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Nirvana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Radiohead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Radiohead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ryuichi_Sakamoto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ryuichi_Sakamoto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#The_Beatles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#The_Beatles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#The_Jazz_Messengers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#The_Jazz_Messengers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Tupac_Shakur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Tupac_Shakur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Хип-хоп"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Альт -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Альт">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Барабаны -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Барабаны">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ударные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Бас_гитара -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Бас_гитара">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Виолончель -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Виолончель">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Пользователь"/>
+        <untitled-ontology-4:Нравится_исполнитель rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Daft_Punk"/>
+        <untitled-ontology-4:Нравится_исполнитель rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Deadmau5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Драм-машина -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Драм-машина">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Хип-хоп"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Иоганн_Себастьян_Бах -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Иоганн_Себастьян_Бах">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Кастаньеты -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Кастаньеты">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ударные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавесин -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавесин">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Кларнет -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Кларнет">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классическая_гитара -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классическая_гитара">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Контрабас -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Контрабас">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Людвиг_ван_Бетховен -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Людвиг_ван_Бетховен">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Орган -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Орган">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Саксофон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Саксофон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Скрипка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Скрипка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Тромбон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Тромбон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Труба -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Труба">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Туба -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Туба">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Духовые"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Фортепиано -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Фортепиано">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Джаз"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Классика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Хип-хоп -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Хип-хоп">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электрогитара -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электрогитара">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Струнные"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Жанр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронное_пианино -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронное_пианино">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Клавишные"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные_барабаны -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные_барабаны">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Ударные"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронные"/>
+        <untitled-ontology-4:Подходит_жанру rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Электронная_музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#AC/DC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#AC/DC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Guns_N&apos;_Roses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Guns_N&apos;_Roses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Исполнитель"/>
+        <untitled-ontology-4:Играет_в_жанре rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Рок"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#user">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#performer">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#genre">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#instrument">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Нравится_исполнитель"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#user"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#performer"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Играет_в_жанре"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#performer"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#genre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Предпочитает_жанр"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#user"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#genre"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Предпочитает_жанр"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#user"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#genre"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_жанру"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#instrument"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#genre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#Подходит_пользователю"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#instrument"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/temich/ontologies/2024/10/untitled-ontology-4#user"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
